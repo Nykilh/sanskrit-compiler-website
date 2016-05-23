@@ -1,0 +1,45 @@
+﻿.container {
+  width: 100%;
+}
+
+.body-content {
+  margin-left: 14em;
+  margin-top: 1em;
+  width: 85%;
+}
+
+body{
+background-image: url("om.jpg");}
+header {
+  padding: .4em;
+  background-color: black;
+  color: #FF4500;
+  font-size: xx-large;
+  font-weight:bold;
+}
+
+  header a {
+    background-color: black;
+    color: #FF4500;
+    text-decoration: none;
+  }
+  .btn{
+  float:right;}
+  
+/*.ui-content {
+padding left:  1em;
+ position: absolute;
+ right: 0em;
+ }*/ 
+
+    header a:hover {
+      text-decoration: none;
+    }
+
+.notransition * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}

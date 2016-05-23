@@ -1,0 +1,15 @@
+﻿/* **************************** */
+/* BEGIN: PDSA Collapser Styles */
+/* **************************** */
+.panel .panel-heading .panel-title a {
+  text-decoration: none;
+  font-size: large;
+  text-transform: none;
+}
+
+.pdsa-panel-toggle {
+  float: right;
+}
+/* ************************** */
+/* END: PDSA Collapser Styles */
+/* ************************** */

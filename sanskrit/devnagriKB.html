@@ -1,0 +1,166 @@
+<html>
+<title>Devnagri Keyboard</title>
+<meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+<head>
+
+</head>
+<body>
+
+	<table>
+		<FORM  METHOD=post ACTION=gen.jsp#results name="iform"  accept-Charset="UTF-8">
+			<tr>
+				<td>
+				<!--<font size=2><b>Enter words separated by '+' sign  (like w+w w+w...) for Sandhi 
+			(संधि हेतु ’शब्द+शब्द’ ’शब्द+शब्द’...दें) 
+			using adjacent keyboard OR You can type fast using our inbuilt <a href=../js/itrans.html target=_blank>iTRANS</a>-Devanagari unicode converter-->
+			        <textarea name=itext COLS=40 ROWS=10 onkeypress=checkKeycode(event) onkeyup=iu()>संस्कृत</textarea>
+			    </td>
+			</tr>
+			<tr><td><br></td></tr>
+			<tr>
+				<td> 
+					<!--<input type=submit value="Generate Sandhi forms (संधि-शब्द बनाएं)"></span>-->
+				</td>
+			</tr>
+	</table>
+
+
+	<table>
+	<tr>
+		<td>
+			<head>
+<SCRIPT language=JavaScript src="js/devkb.js"></SCRIPT>
+<head>
+
+
+<TEXTAREA name=itrans rows=5 cols=10 style="display:none"></TEXTAREA> 
+<INPUT name=lastChar type=hidden>
+
+<table border=2 style="background-color:#fff;"> 
+	<tbody>
+		
+		<tr >
+			<td>
+				<input type=button name="btn" style="width: 24px" value="&#x0905;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0906;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0907;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0908;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0909;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x090A;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x090F;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0910;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0913;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0914;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0905;&#x0902;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0905;&#x0903;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x090D;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0911;" onClick="keyboard(this.value)">
+
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type=button name="btn" style="width: 24px" value="&#x094D;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x093E;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x093F;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0940;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0941;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0942;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0947;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0948;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x094B;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x094C;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0902;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0903;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0945;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0949;" onClick="keyboard(this.value)">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				
+				<input type=button name="btn" style="width: 24px" value="&#x0915;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0916;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0917;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0918;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0919;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x091A;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x091B;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x091C;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x091D;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x091E;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 100px" value="Backspace" onClick="BackSpace()">
+			
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type=button name="btn" style="width: 24px" value="+" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x091F;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0920;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0921;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0922;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0923;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="">
+				<input type=button name="btn" style="width: 24px" value="">
+				<input type=button name="btn" style="width: 24px" value="">
+				<input type=button name="btn" style="width: 24px" value="&#x0924;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0925;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0926;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0927;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0928;" onClick="keyboard(this.value)">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type=button name="btn" style="width: 24px" value="/" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x092A;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x092B;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x092C;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x092D;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x092E;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="">
+				<input type=button name="btn" style="width: 24px" value="">
+				<input type=button name="btn" style="width: 24px" value="">
+				<input type=button name="btn" style="width: 24px" value="&#x092F;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0930;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0932;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0935;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0964;" onClick="keyboard(this.value)">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type=button name="btn" style="width: 24px" value="*" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0936;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0937;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0938;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="">
+				<input type=button name="btn" style="width: 24px" value="&#x090B;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x090C;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0943;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0944;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="">
+				<input type=button name="btn" style="width: 24px" value="">
+				<input type=button name="btn" style="width: 24px" value="&#x0939;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="">
+				<input type=button name="btn" style="width: 24px" value="&#x0965;" onClick="keyboard(this.value)">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				
+				<input type=button name="btn" style="width: 24px" value="&#x0924;&#x094D;&#x0930;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x091C;&#x094D;&#x091E;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0915;&#x094D;&#x0937;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x0936;&#x094D;&#x0930;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 200px" value="Space Bar" onClick="Space()">
+				<input type=button name="btn" style="width: 24px" value="&#x0901;" onClick="keyboard(this.value)">
+				<input type=button name="btn" style="width: 24px" value="&#x093C;" onClick="keyboard(this.value)">
+			</td>
+		</tr>
+	</tbody>
+</table>
+<a href="keyboard.html">------</a>
+
+</body>
